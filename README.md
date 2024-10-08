@@ -11,13 +11,17 @@
  ### ANSAWER SECTION: 
  Muestra la direccion IP asociada al dominio (178.211.133.37)
  ### AUTHORITY SECTION:
- En esta consulta aparece vacia, deberia de indicar los servidores que se encuentran asociados a dicho dominio.
+ En esta consulta aparece vacia, deberia de indicar los servidores autoritativos que se encuentran asociados a dicho dominio.
 
 ## Realiza consutas dos seguintes nomes e identifica as diferencias: moodle.danielcastelao.org, www.danielcastelao.org  
 Las diferencias muestran que **moodle** no está configurado, mientras que el dominio www.danielcastelao.org sí está activo.
 ### Diferencia:
 En el estado de `moodle` dice: NXDOMAIN mientras que el de `danielcastelao` dice : NOERROR. Esto quiere decir que el `moodle` no tiene un dominio o una  direccion IP mientras que la `danielcastelao` Si tiene un dominio y una direccion IP.
+
 ## Averigua o nome e IP dos servidores de DNS autoritativos de www.danielcastelao.org, por qué soen ser 2 servidores autoritativos?
+Utilizando el comando `dig NS www.danielcastelao.org` en la terminal nos dara la informacion de los 2 servidores autoritativos en este caso son *ns1.hover.com* que se encarga de los nombres para el dominio `danielcastelao.org` *dnsmaster.hover.com* es el que se encarag de los correos de administracion del DNS. suelen ser dos servidores o mas por si uno falla el otro se encuentre disponible, redundancia, diponibilidad geografica, mejor accesibilidad. 
+
+Ahora para averiguar la direccion IP se utiliza el comando `dig A dnsmaster.hover.com` y la direccion IP es 216.40.34.41  y la del servidor `ns1.hover.com` es 216.40.47.26.
 
 ## Realiza as consultas de nomes inversas: 130.206.164.68 e de outras dúas IPs que se che ocorran.
 
