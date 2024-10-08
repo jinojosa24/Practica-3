@@ -4,7 +4,6 @@
  Al realiza la consulta utilizando el comando `dig danielcastelao.org` nos da un informacion detallada sobre:
  ### IN: 
  Es un resgistro de INTERNET
- ### CNAME:
  ### A: 
  Nombre de dominio
  ### QUERY SECTION: 
@@ -15,7 +14,9 @@
  En esta consulta aparece vacia, deberia de indicar los servidores que se encuentran asociados a dicho dominio.
 
 ## Realiza consutas dos seguintes nomes e identifica as diferencias: moodle.danielcastelao.org, www.danielcastelao.org  
-
+Las diferencias muestran que **moodle** no está configurado, mientras que el dominio www.danielcastelao.org sí está activo.
+### Diferencia:
+En el estado de `moodle` dice: NXDOMAIN mientras que el de `danielcastelao` dice : NOERROR. Esto quiere decir que el `moodle` no tiene un dominio o una  direccion IP mientras que la `danielcastelao` Si tiene un dominio y una direccion IP.
 ## Averigua o nome e IP dos servidores de DNS autoritativos de www.danielcastelao.org, por qué soen ser 2 servidores autoritativos?
 
 ## Realiza as consultas de nomes inversas: 130.206.164.68 e de outras dúas IPs que se che ocorran.
