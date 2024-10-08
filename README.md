@@ -1,6 +1,18 @@
 # Practica-3
 
 ## Realiza unha consulta "dig danielcastelao.org" e identific cada parte da resposta (IN, CNAME, A, QUERY SECTION, ANSWER SECTION, AUTHORITY SECTION, etc)
+ Al realiza la consulta utilizando el comando `dig danielcastelao.org` nos da un informacion detallada sobre:
+ ### IN: 
+ Es un resgistro de INTERNET
+ ### CNAME:
+ ### A: 
+ Nombre de dominio
+ ### QUERY SECTION: 
+ Muestra la consulta realizada, en este caso la consulta se esta realizando en el dominio danielcastelao.
+ ### ANSAWER SECTION: 
+ Muestra la direccion IP asociada al dominio (178.211.133.37)
+ ### AUTHORITY SECTION:
+ En esta consulta aparece vacia, deberia de indicar los servidores que se encuentran asociados a dicho dominio.
 
 ## Realiza consutas dos seguintes nomes e identifica as diferencias: moodle.danielcastelao.org, www.danielcastelao.org  
 
