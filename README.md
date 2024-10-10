@@ -1,6 +1,7 @@
 <div style="background-color: lightblue; padding: 10px;">
-# Practica-3 DIG
 
+# Practica-3 DIG
+</div>
 ## 1. Realiza unha consulta "dig danielcastelao.org" e identific cada parte da resposta (IN, CNAME, A, QUERY SECTION, ANSWER SECTION, AUTHORITY SECTION, etc)
 
  Al realiza la consulta utilizando el comando `dig danielcastelao.org` nos da un informacion detallada sobre:
@@ -90,4 +91,3 @@ Para saber la IP de cada uno de estos con el comando `dig a` seguido del nombre.
 ## 14. Podes obter os rexistros AAAA de www.facebook.com? a qué corresponden?
 Luego de hacer la consulta, los registros `AAAA`corresponden al direccionamiento IPv6. *star-mini.c10r.facebook.com. 6	IN	AAAA	2a03:2880:f104:83:face:b00c:0:25de* informacion del registro.
 
-</div>
