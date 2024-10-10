@@ -37,20 +37,37 @@ Realizamos el comando `dig 130.206.164.68` tambien se podria utilizar el comando
 
 Este en el servidor que estoy consultando al lanzar el comando `dig`en la terminal me da este resultado. *;; SERVER: 127.0.0.53#53(127.0.0.53) (UDP)* 
 
-Utilizando este comando `dig @8.8.8.8 www.facebook.com` consultariamos facebook con el ser de google 8.8.8.8
-
+Utilizando este comando `dig @8.8.8.8 www.facebook.com` consultariamos facebook con el server de google 8.8.8.8
 
 ## 6. Obtén o rexistro SOA (Start of Authority) do dominio  moodle.danielcastelao.org preguntándolle ó servidor DNS de google e logo preoguntándollo directamente ó servidor primario do dominio danielcastelao.org. 
 
+Para consultarlo en la terminal con el comando `dig @8.8.8.8 SOA moodle.danielcastelao.org` y se obtendra la informacion del registro SOA.
+
+Ahora para consultarlo con el servidor primario del dominio danielcastelao.org utilizando el comando `dig @ns1.hover.com SOA moodle.danielcastelao.org` nos dara la informacion del registro SOA.
+
 ## 7. Consulta a IP de www.elpais.com. Cánto tempo queda almaceado o rexistro de recurso no DNS local?, se preguntas ó DNS local por este recurso, qué observas no TTL do rexistro?
 
+ Con el comando `dig www.elpais.com` La IP de www.elpais.com tiene un TTL de 3 segundos, el registro se guarda en la caché del DNS local solo durante ese tiempo. y en la CNAME	prisa-us-eu.map.fastly.net. 
+
 ## 8. Busca o TTL de distintos nomes de dominio de servicios que escollas, a qué se poden deber as diferencias?
+Estos fueron las dos dominios que busque `dig www.google.com` y `dig www.microsoft.com`  la cual arrojo, google un TTL de *245* y la de microsoft  *2742*.
+
+El TTL pricipalmente se debe a la necesita de la empresa de mantener un servicio estable y rapido. 
+
 
 ## 9. Determina o TTL máximo (original) dun nome de dominio.
-    
-## 10. Averigua cántas máquinas con distintas IPs están detrás do dominio web www.google.es, sempre son as mesmas e na mesma orde? por qué?
 
-## 11. Pregunta o mesmo a un server raiz (J.ROOTSERVERS.NET por exemplo) e comproba na resposta se o server acepta o modo recursivo
+El TTL es 2021 segundos.
+*;; ANSWER SECTION:*
+*www.microsoft.		2021	IN	A	20.112.250.133*
+
+## 10. Averigua cántas máquinas con distintas IPs están detrás do dominio web www.google.es, sempre son as mesmas e na mesma orde? por qué?
+Luego de hacer la  varias veces la consulta, siempre dio el mismo direccionamiento IP *142.250.184.163* lo que fue variando fue la TTL disminuyendo. 
+En algunos casos la IP podria variar dependera del dominio que se consulte.
+## 11. Pregunta o mesmo a un server raiz (J.ROOTSERVERS.NET por exemplo) e comproba na resposta se o server acepta o modo recursivo.
+
+Luego de hacer la consulta el server no acepta respuesta recursiva. 
+`;; WARNING: recursion requested but not available`
 
 ## 12. Se queremos ver tóda-las queries que fai o servidor de DNS, qué opción temos que usar? averigua a IP de www.timesonline.co.uk, especifica os pasos dados
 
