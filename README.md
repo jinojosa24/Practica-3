@@ -2,6 +2,7 @@
 
 # Practica-3 DIG
 </div>
+
 ## 1. Realiza unha consulta "dig danielcastelao.org" e identific cada parte da resposta (IN, CNAME, A, QUERY SECTION, ANSWER SECTION, AUTHORITY SECTION, etc)
 
  Al realiza la consulta utilizando el comando `dig danielcastelao.org` nos da un informacion detallada sobre:
