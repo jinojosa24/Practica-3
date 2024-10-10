@@ -88,3 +88,5 @@ Para saber la IP de cada uno de estos con el comando `dig a` seguido del nombre.
 
 ## 14. Podes obter os rexistros AAAA de www.facebook.com? a qué corresponden?
 Luego de hacer la consulta, los registros `AAAA`corresponden al direccionamiento IPv6. *star-mini.c10r.facebook.com. 6	IN	AAAA	2a03:2880:f104:83:face:b00c:0:25de* informacion del registro.
+
+<span style="color:blue">Este texto será azul</span>
