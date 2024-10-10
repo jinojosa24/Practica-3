@@ -1,6 +1,4 @@
-<div style="background-color: lightblue; padding: 10px;">
-<h1>Practica-3 DIG </h1>
-</div>
+# Practica-3 DIG
 
 ## 1. Realiza unha consulta "dig danielcastelao.org" e identific cada parte da resposta (IN, CNAME, A, QUERY SECTION, ANSWER SECTION, AUTHORITY SECTION, etc)
 
