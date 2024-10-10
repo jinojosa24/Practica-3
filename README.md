@@ -71,6 +71,9 @@ Luego de hacer la consulta el server no acepta respuesta recursiva.
 
 ## 12. Se queremos ver tóda-las queries que fai o servidor de DNS, qué opción temos que usar? averigua a IP de www.timesonline.co.uk, especifica os pasos dados
 
+
 ## 13. Usando a información dispoñible a traveso do DNS especifica a máquina (nome e IP) ou máquinas que actúan como servers de correo do dominio danielcastelao.org
 
+
 ## 14. Podes obter os rexistros AAAA de www.facebook.com? a qué corresponden?
+Luego de hacer la consulta, los registros `AAAA`corresponden al direccionamiento IPv6. *star-mini.c10r.facebook.com. 6	IN	AAAA	2a03:2880:f104:83:face:b00c:0:25de* informacion del registro.
